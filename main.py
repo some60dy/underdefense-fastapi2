@@ -25,7 +25,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
 @app.get("/info")
-async def info(request: Request):
+def info(request: Request):
     return templates.TemplateResponse("info.html", {
         "request": request,
         "app_name": "CVE Viewer",
