@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>CVE List</h2>
+<ul>
+    {% for cve in cves %}
+        <li>
+            <strong>{{ cve.cveID }}</strong>
+            <p>{{ cve.notes }}</p>
+            <p><em>Added: {{ cve.dateAdded }}</em></p>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
