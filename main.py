@@ -7,7 +7,7 @@ import requests
 # Elasticsearch configuration
 ES_CLOUD_ID = "d27fb9a547234d009683fa5aaa8db8c7:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJDYzMGViOTQ5MDk0MTRhYzNiYjc4MGRmMzE3ZDE2YmM5JGRiMTM2YTA4M2FkNDRkN2VhYmZlNWE4YmEzODNkNTlm"
 ES_API_KEY = "ZVJ5b2lKTUJTMndmOVhpRkpYelI6LVM2MU9kOFJUMVdEMVU0dzZEU3VHUQ=="
-INDEX_NAME = "cve_data"
+INDEX_NAME = "cves_db"
 
 # Initialize Elasticsearch
 es = Elasticsearch(
